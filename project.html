@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Estonia&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>JavaScript Project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #32ff7e;
+      }
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Dancing Script", cursive;
+        color: #ff4d4d;
+        font-size: 50px;
+        flex-direction: column;
+      }
+      .Q1 {
+        height: 6vh;
+        width: 70vh;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px yellow;
+        outline: none;
+        padding: 0px 0px 30px 20px;
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+      }
+      .Q2 {
+        height: 6vh;
+        width: 70vh;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 135px;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px yellow;
+        outline: none;
+        padding: 0px 0px 30px 20px;
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+      }
+      .Q3 {
+        height: 6vh;
+        width: 70vh;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 135px;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px yellow;
+        outline: none;
+        padding: 0px 0px 30px 20px;
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+      }
+      .image {
+        transform: scale(0.9);
+        cursor: pointer;
+        margin-left: 130px;
+        /* margin-top: 2px; */
+        padding-top: 8px;
+      }
+      .image1 {
+        transform: scale(0.9);
+        cursor: pointer;
+        margin-left: 185px;
+        /* margin-top: 2px; */
+        padding-top: 5px;
+      }
+      .image2 {
+        transform: scale(0.9);
+        cursor: pointer;
+        margin-left: 180px;
+        /* margin-top: 2px; */
+        padding-top: 5px;
+      }
+      .answer {
+        height: 20vh;
+        width: 31vw;
+        background-color: white;
+        margin-top: 5px;
+      }
+      .answer1 {
+        height: 20vh;
+        width: 31vw;
+        background-color: white;
+        margin-top: 8px;
+      }
+      .answer2 {
+        height: 20vh;
+        width: 31vw;
+        background-color: white;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">General Question</div>
+      <div class="Q1">
+        <b> You Accecpt All Major Credit Cards?</b>
+        <!-- <i class="fal fa-plus-square"></i> -->
+        <img src="image.png" alt="" class="image" />
+        <div class="answer">
+          <p>
+            We accept all major credit and debit cards, including Visa,
+            MasterCard and American Express. Please note we will only accept
+            checks or bank transfers for large accounts and by prior agreement.
+            What's the deal with the free plan? With our free-forever plan, you
+            get a powerful booking page with all the basic features we know you
+            need.
+          </p>
+        </div>
+      </div>
+      <div class="Q2">
+        <b> You Support Local Farmers?</b>
+
+        <img src="image.png" alt="" class="image1" />
+        <div class="answer1">
+          <p>
+            The fruits and vegetables you buy at the farmers market are the
+            freshest and tastiest available. Fruits are allowed to ripen fully
+            in the field and are brought directly to you—no long-distance
+            shipping, no gassing to simulate the ripening process, no sitting
+            for weeks in storage. This food is as real as it gets—fresh from the
+            farm.
+          </p>
+        </div>
+      </div>
+      <div class="Q3">
+        <b> You Use Organic Ingredients?</b>
+
+        <img src="image.png" alt="" class="image2" />
+        <div class="answer2">
+          <p>
+            The USDA organic regulations do not currently include separate
+            standards for these products. Honey, mushrooms, and pet food may be
+            certified to current production and handling standards and must
+            comply with labeling requirements for organic products certified
+            under these standards. Talk to your certifier for details.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".image");
+      let div = document.querySelector(".answer");
+
+      btn.addEventListener("click", () => {
+        if (div.style.display === "none") {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
+
+      let btn1 = document.querySelector(".image1");
+      let div1 = document.querySelector(".answer1");
+
+      btn1.addEventListener("click", () => {
+        if (div1.style.display === "none") {
+          div1.style.display = "block";
+        } else {
+          div1.style.display = "none";
+        }
+      });
+
+      let btn2 = document.querySelector(".image2");
+      let div2 = document.querySelector(".answer2");
+
+      btn2.addEventListener("click", () => {
+        if (div2.style.display === "none") {
+          div2.style.display = "block";
+        } else {
+          div2.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
